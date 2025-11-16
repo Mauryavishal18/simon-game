@@ -1,0 +1,96 @@
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+#level-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.difficulty-container {
+    margin-bottom: 2rem;
+}
+
+.difficulty-btn {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.difficulty-btn:hover {
+    background-color: #30363d;
+}
+
+.difficulty-btn.active {
+    background-color: #1f6feb;
+    border-color: #1f6feb;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.btn {
+    height: 180px;
+    border: 7px solid black;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: box-shadow 0.1s, transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.green { background-color: #28a745; }
+.red { background-color: #dc3545; }
+.yellow { background-color: #ffc107; }
+.blue { background-color: #007bff; }
+
+.pressed {
+    box-shadow: 0 0 30px #fff, 0 0 10px #fff;
+    background-color: #f8f9fa;
+}
+
+.game-over {
+    background-color: #721c24;
+}
+
+@media (max-width: 480px) {
+    .btn { height: 120px; }
+    #level-title { font-size: 1.5rem; }
+    .score-container { font-size: 1rem; }
+}

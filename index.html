@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Simon Game</title>
+    <link rel="stylesheet" href="simon.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="score-container">
+            <h2>SCORE: <span id="current-score">0</span></h2>
+            <h2>HIGH SCORE: <span id="high-score">0</span></h2>
+        </div>
+        <h1 id="level-title">Press Any Key to Start</h1>
+        <div class="difficulty-container">
+            <button class="difficulty-btn" data-speed="800">Easy</button>
+            <button class="difficulty-btn active" data-speed="500">Medium</button>
+            <button class="difficulty-btn" data-speed="250">Hard</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div type="button" id="green" class="btn green"></div>
+        <div type="button" id="red" class="btn red"></div>
+        <div type="button" id="yellow" class="btn yellow"></div>
+        <div type="button" id="blue" class="btn blue"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="simon.js"></script>
+</body>
+</html>
